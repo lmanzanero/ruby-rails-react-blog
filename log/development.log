@@ -1,0 +1,2399 @@
+Started GET "/" for 127.0.0.1 at 2017-06-27 11:59:37 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
+Completed 200 OK in 468ms (Views: 28.7ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (22.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (19.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK(2253939812606074005, 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateArticles (20170627160121)
+  [1m[35m (19.6ms)[0m  [1m[35mCREATE TABLE `articles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `body` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170627160121')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-06-27 16:02:36', '2017-06-27 16:02:36')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK(2253939812606074005)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSHOW CREATE TABLE `articles`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'articles'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('Mr Standfast', 'Expedita praesentium error laboriosam vitae repellat quasi et ex.', '2017-06-27 16:09:46', '2017-06-27 16:09:46')[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('The Torment of Others', 'At ex labore quo veritatis ab.', '2017-06-27 16:09:46', '2017-06-27 16:09:46')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('Of Human Bondage', 'Dicta deleniti omnis a.', '2017-06-27 16:09:46', '2017-06-27 16:09:46')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('A Swiftly Tilting Planet', 'Odio perspiciatis quisquam corporis possimus.', '2017-06-27 16:09:46', '2017-06-27 16:09:46')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('Rosemary Sutcliff', 'Sequi aut aut similique.', '2017-06-27 16:09:46', '2017-06-27 16:09:46')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:22:47 -0400
+  [1m[35m (0.0ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+SyntaxError (C:/Sites/myarticles/app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT):
+  
+app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT
+Started GET "/api/v1/articles.json" for 127.0.0.1 at 2017-06-27 12:23:00 -0400
+  
+SyntaxError (C:/Sites/myarticles/app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT):
+  
+app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT
+Started GET "/api/v1/articles.json" for 127.0.0.1 at 2017-06-27 12:23:01 -0400
+  
+SyntaxError (C:/Sites/myarticles/app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT):
+  
+app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT
+Started GET "/api/v1/articles.json" for 127.0.0.1 at 2017-06-27 12:25:07 -0400
+  
+SyntaxError (C:/Sites/myarticles/app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT):
+  
+app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT
+Started GET "/" for 127.0.0.1 at 2017-06-27 12:26:44 -0400
+  [1m[35m (0.5ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 33ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:28:36 -0400
+  
+SyntaxError (C:/Sites/myarticles/app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT):
+  
+app/controllers/api/v1/articles_controller.rb:2: class/module name must be CONSTANT
+Started GET "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:29:32 -0400
+Processing by Api::V1::ArticlesController#index as */*
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `ok' for #<Api::V1::ArticlesController:0x5a40710>):
+  
+app/controllers/api/v1/articles_controller.rb:6:in `index'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:30:04 -0400
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 23ms (Views: 8.5ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/api/v1/articles/1" for 127.0.0.1 at 2017-06-27 12:35:51 -0400
+Processing by Api::V1::ArticlesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 22ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/articles/3" for 127.0.0.1 at 2017-06-27 12:35:57 -0400
+Processing by Api::V1::ArticlesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:45:22 -0400
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"title"=>"Article One", "body"=>"This is the body", "article"=>{"title"=>"Article One", "body"=>"This is the body"}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 7.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: articles):
+  
+app/controllers/api/v1/articles_controller.rb:25:in `article_params'
+app/controllers/api/v1/articles_controller.rb:15:in `create'
+Started POST "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:46:10 -0400
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"title"=>"Article One", "body"=>"This is the body", "article"=>{"title"=>"Article One", "body"=>"This is the body"}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: articles):
+  
+app/controllers/api/v1/articles_controller.rb:25:in `article_params'
+app/controllers/api/v1/articles_controller.rb:15:in `create'
+Started POST "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:46:33 -0400
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"{\n\t\"title\":\"Article One\",\n\t\"body\":\"This is the body\"\n}"=>nil}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: articles):
+  
+app/controllers/api/v1/articles_controller.rb:25:in `article_params'
+app/controllers/api/v1/articles_controller.rb:15:in `create'
+Started POST "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:46:46 -0400
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"------WebKitFormBoundarysZOXl7nJAA9AxT8o\r\nContent-Disposition: form-data; name"=>"\"title\"\r\n\r\ntest\r\n------WebKitFormBoundarysZOXl7nJAA9AxT8o\r\nContent-Disposition: form-data; name=\"body\"\r\n\r\ntest\r\n------WebKitFormBoundarysZOXl7nJAA9AxT8o--\r\n"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: articles):
+  
+app/controllers/api/v1/articles_controller.rb:25:in `article_params'
+app/controllers/api/v1/articles_controller.rb:15:in `create'
+Started POST "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:48:35 -0400
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"------WebKitFormBoundaryGqMshLJyjI1KPlxr\r\nContent-Disposition: form-data; name"=>"\"title\"\r\n\r\ntest\r\n------WebKitFormBoundaryGqMshLJyjI1KPlxr\r\nContent-Disposition: form-data; name=\"body\"\r\n\r\ntest\r\n------WebKitFormBoundaryGqMshLJyjI1KPlxr--\r\n"}
+Unpermitted parameter: :------WebKitFormBoundaryGqMshLJyjI1KPlxr
+Content-Disposition: form-data; name
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 284ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2017-06-27 12:53:47 -0400
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"title"=>"Test Article One", "body"=>"This is the body", "article"=>{"title"=>"Test Article One", "body"=>"This is the body"}}
+Unpermitted parameter: :article
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('Test Article One', 'This is the body', '2017-06-27 16:53:47', '2017-06-27 16:53:47')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/api/v1/articles/6" for 127.0.0.1 at 2017-06-27 12:56:45 -0400
+Processing by Api::V1::ArticlesController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[31mDELETE FROM `articles` WHERE `articles`.`id` = 6[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 6.5ms)
+
+
+Started PUT "/api/v1/articles/5" for 127.0.0.1 at 2017-06-27 12:59:30 -0400
+Processing by Api::V1::ArticlesController#update as */*
+  Parameters: {"title"=>"Updated Title", "body"=>"Updated Body", "id"=>"5", "article"=>{"title"=>"Updated Title", "body"=>"Updated Body"}}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 5 LIMIT 1[0m
+Unpermitted parameters: :id, :article
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `articles` SET `title` = 'Updated Title', `body` = 'Updated Body', `updated_at` = '2017-06-27 16:59:30' WHERE `articles`.`id` = 5[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 1.5ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT GET_LOCK(2253939812606074005, 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateArticles (20170627160121)
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE `articles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `body` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK(2253939812606074005)[0m
+Started GET "/" for 127.0.0.1 at 2018-03-08 08:56:49 -0600
+  [1m[35m (0.3ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.2) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (295.0ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (330.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT GET_LOCK(2253939812606074005, 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateArticles (20170627160121)
+  [1m[35m (196.2ms)[0m  [1m[35mCREATE TABLE `articles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `body` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170627160121')[0m
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-03-08 15:00:13', '2018-03-08 15:00:13')[0m
+  [1m[35m (31.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK(2253939812606074005)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `articles`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'articles'[0m
+Started GET "/" for 127.0.0.1 at 2018-03-08 09:00:39 -0600
+  [1m[35m (0.2ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/gitz/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/gitz/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (7.4ms)
+Completed 200 OK in 38ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-03-08 09:16:03 -0600
+  [1m[35m (0.3ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/gitz/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/gitz/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (14.8ms)
+Completed 200 OK in 45ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2018-03-08 09:16:04 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1" for ::1 at 2018-03-08 09:16:12 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:16:19 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 15ms (Views: 3.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/v1/articles" for ::1 at 2018-03-08 09:18:00 -0600
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"title"=>"This is the title", "body"=>"This is the body", "article"=>{"title"=>"This is the title", "body"=>"This is the body"}}
+Unpermitted parameter: :article
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('This is the title', 'This is the body', '2018-03-08 15:18:00', '2018-03-08 15:18:00')[0m
+  [1m[35m (45.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 62ms (Views: 2.0ms | ActiveRecord: 46.2ms)
+
+
+Started GET "/api/v1/articles/" for ::1 at 2018-03-08 09:18:07 -0600
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:18:42 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/articles" for ::1 at 2018-03-08 09:19:10 -0600
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"title"=>"This is Article 2", "body"=>"This is the body", "article"=>{"title"=>"This is Article 2", "body"=>"This is the body"}}
+Unpermitted parameter: :article
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('This is Article 2', 'This is the body', '2018-03-08 15:19:10', '2018-03-08 15:19:10')[0m
+  [1m[35m (64.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 69ms (Views: 0.4ms | ActiveRecord: 64.5ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:19:13 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/articles" for ::1 at 2018-03-08 09:19:21 -0600
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"title"=>"This is Article 3", "body"=>"This is the body", "article"=>{"title"=>"This is Article 3", "body"=>"This is the body"}}
+Unpermitted parameter: :article
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('This is Article 3', 'This is the body', '2018-03-08 15:19:21', '2018-03-08 15:19:21')[0m
+  [1m[35m (40.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 46ms (Views: 1.4ms | ActiveRecord: 41.0ms)
+
+
+Started POST "/api/v1/articles" for ::1 at 2018-03-08 09:19:26 -0600
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"title"=>"This is Article 4", "body"=>"This is the body", "article"=>{"title"=>"This is Article 4", "body"=>"This is the body"}}
+Unpermitted parameter: :article
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('This is Article 4', 'This is the body', '2018-03-08 15:19:26', '2018-03-08 15:19:26')[0m
+  [1m[35m (101.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 105ms (Views: 0.5ms | ActiveRecord: 102.0ms)
+
+
+Started POST "/api/v1/articles" for ::1 at 2018-03-08 09:19:32 -0600
+Processing by Api::V1::ArticlesController#create as */*
+  Parameters: {"title"=>"This is Article 5", "body"=>"This is the body", "article"=>{"title"=>"This is Article 5", "body"=>"This is the body"}}
+Unpermitted parameter: :article
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('This is Article 5', 'This is the body', '2018-03-08 15:19:32', '2018-03-08 15:19:32')[0m
+  [1m[35m (32.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 36ms (Views: 0.5ms | ActiveRecord: 32.7ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:19:34 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:20:02 -0600
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:20:12 -0600
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:21:01 -0600
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:21:06 -0600
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:21:30 -0600
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:21:49 -0600
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started OPTIONS "/api/v1/articles" for ::1 at 2018-03-08 09:35:35 -0600
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/articles"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:38:52 -0600
+Processing by Api::V1::ArticlesController#index as JSON
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:39:40 -0600
+Processing by Api::V1::ArticlesController#index as JSON
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:40:18 -0600
+Processing by Api::V1::ArticlesController#index as JSON
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:41:35 -0600
+Processing by Api::V1::ArticlesController#index as JSON
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:43:11 -0600
+Processing by Api::V1::ArticlesController#index as JSON
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:43:15 -0600
+Processing by Api::V1::ArticlesController#index as JSON
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started OPTIONS "/api/v1/articles" for ::1 at 2018-03-08 09:45:31 -0600
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/articles"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:45:46 -0600
+Processing by Api::V1::ArticlesController#index as JSON
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:48:13 -0600
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:49:21 -0600
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:49:32 -0600
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:49:42 -0600
+Processing by Api::V1::ArticlesController#index as */*
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:55:39 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/articles" for ::1 at 2018-03-08 09:56:08 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 09:57:38 -0600
+  [1m[35m (0.2ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 09:57:59 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 09:58:11 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 09:59:33 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:00:17 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (17.8ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 20ms (Views: 1.8ms | ActiveRecord: 17.8ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:00:27 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:01:47 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:02:12 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:02:22 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:07:11 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:07:37 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:08:13 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:08:18 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:08:42 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:09:09 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:09:48 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:11:24 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:12:15 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:12:40 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:12:48 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:13:01 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:13:11 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:15:52 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:19:29 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:20:30 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:20:47 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:24:01 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:25:18 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:25:30 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:34:01 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:34:05 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:34:16 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/App.js" for 127.0.0.1 at 2018-03-08 10:34:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/index.js" for 127.0.0.1 at 2018-03-08 10:34:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/index.js"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:34:27 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:34:43 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:35:26 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:35:37 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:36:06 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:39:32 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:39:56 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:40:15 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:41:18 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:43:16 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:51:54 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:52:46 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 10:55:38 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:10:59 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:11:33 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:26:19 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:28:22 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:28:49 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:29:13 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:29:31 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:29:43 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:29:46 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:30:53 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:30:57 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:32:18 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:32:21 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:33:16 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:35:48 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:36:23 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:37:57 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:43:00 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:43:02 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:43:04 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:43:05 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:43:12 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:43:46 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:43:55 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:43:58 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:46:03 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:46:25 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:46:32 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:46:54 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:47:01 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:47:25 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:47:45 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:48:22 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:48:25 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:48:30 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:48:44 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:48:56 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:51:13 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:51:28 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:54:32 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:54:54 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:54:58 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:56:08 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:57:27 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:57:37 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:57:58 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:58:32 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 11:58:44 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:00:48 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:02:27 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:03:29 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:03:50 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:06:41 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:06:51 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:10:08 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/images/sample-1.jpg" for 127.0.0.1 at 2018-03-08 12:12:49 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/sample-1.jpg"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:12:49 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/sample-1.jpg" for 127.0.0.1 at 2018-03-08 12:13:03 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/sample-1.jpg"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:13:03 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:16:00 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/sample-1.jpg" for 127.0.0.1 at 2018-03-08 12:16:00 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/images/sample-1.jpg"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:17:18 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:19:06 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:19:39 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:20:16 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:21:03 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:21:15 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:23:14 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:23:22 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:23:39 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:23:51 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:24:18 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:24:40 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:26:15 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:26:32 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:27:36 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:27:46 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:28:05 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:28:11 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:28:24 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:28:31 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:28:39 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:29:15 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:29:41 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:29:47 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:29:52 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:31:14 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:31:57 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:32:13 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:32:20 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:32:39 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:32:53 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:33:04 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:33:18 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:33:27 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:33:35 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:33:52 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:35:13 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:37:33 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:37:56 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:38:09 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:38:14 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:38:55 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:39:24 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:39:30 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:39:36 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:39:59 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:40:00 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:40:51 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:42:14 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:42:31 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:42:40 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:42:46 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:42:54 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:43:10 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:43:31 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:44:03 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:44:15 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:44:23 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:44:45 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:45:21 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:45:35 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:46:18 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:46:29 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:46:58 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:48:05 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:48:18 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:48:59 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:49:19 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:49:30 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 12:49:34 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:00:21 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:01:14 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:01:37 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:02:04 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:02:13 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:02:21 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:03:15 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:03:27 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:04:42 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:12:29 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:12:39 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:13:12 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:13:27 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:13:31 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:14:13 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:16:40 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:39:24 -0600
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"title"=>"Test Article title", "body"=>"Test Article Body", "article"=>{"title"=>"Test Article title", "body"=>"Test Article Body"}}
+Unpermitted parameter: :article
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('Test Article title', 'Test Article Body', '2018-03-08 19:39:24', '2018-03-08 19:39:24')[0m
+  [1m[35m (165.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 172ms (Views: 0.7ms | ActiveRecord: 166.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:39:36 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:42:05 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:42:36 -0600
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"title"=>"Test Article title 2", "body"=>"Test Article title 2", "article"=>{"title"=>"Test Article title 2", "body"=>"Test Article title 2"}}
+Unpermitted parameter: :article
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('Test Article title 2', 'Test Article title 2', '2018-03-08 19:42:36', '2018-03-08 19:42:36')[0m
+  [1m[35m (67.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 88ms (Views: 2.0ms | ActiveRecord: 68.9ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:45:49 -0600
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"title"=>"", "body"=>"", "article"=>{"title"=>"", "body"=>""}}
+Unpermitted parameter: :article
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 535ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:45:58 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:47:24 -0600
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"title"=>"", "body"=>"", "article"=>{"title"=>"", "body"=>""}}
+Unpermitted parameter: :article
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 7ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:47:46 -0600
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"title"=>"sdfsd", "body"=>"sdfsd", "article"=>{"title"=>"sdfsd", "body"=>"sdfsd"}}
+Unpermitted parameter: :article
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('sdfsd', 'sdfsd', '2018-03-08 19:47:46', '2018-03-08 19:47:46')[0m
+  [1m[35m (47.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 53ms (Views: 0.6ms | ActiveRecord: 48.1ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:48:00 -0600
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"title"=>"", "body"=>"", "article"=>{"title"=>"", "body"=>""}}
+Unpermitted parameter: :article
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 10ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:49:08 -0600
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"title"=>"", "body"=>"", "article"=>{"title"=>"", "body"=>""}}
+Unpermitted parameter: :article
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:49:12 -0600
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"title"=>"", "body"=>"", "article"=>{"title"=>"", "body"=>""}}
+Unpermitted parameter: :article
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:49:13 -0600
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"title"=>"", "body"=>"", "article"=>{"title"=>"", "body"=>""}}
+Unpermitted parameter: :article
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 10ms (Views: 0.7ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2018-03-08 13:50:49 -0600
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"title"=>"", "body"=>"", "article"=>{"title"=>"", "body"=>""}}
+Unpermitted parameter: :article
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2018-03-08 14:00:14 -0600
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"title"=>"", "body"=>"", "article"=>{"title"=>"", "body"=>""}}
+Unpermitted parameter: :article
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2018-03-08 14:00:34 -0600
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"title"=>"Next Article", "body"=>"Next Article Body", "article"=>{"title"=>"Next Article", "body"=>"Next Article Body"}}
+Unpermitted parameter: :article
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('Next Article', 'Next Article Body', '2018-03-08 20:00:34', '2018-03-08 20:00:34')[0m
+  [1m[35m (36.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 44ms (Views: 2.1ms | ActiveRecord: 37.2ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 14:00:38 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/articles" for 127.0.0.1 at 2018-03-08 14:02:32 -0600
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"title"=>"sdfsdfsdfsdf", "body"=>"sdfsdfsd", "article"=>{"title"=>"sdfsdfsdfsdf", "body"=>"sdfsdfsd"}}
+Unpermitted parameter: :article
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `body`, `created_at`, `updated_at`) VALUES ('sdfsdfsdfsdf', 'sdfsdfsd', '2018-03-08 20:02:32', '2018-03-08 20:02:32')[0m
+  [1m[35m (55.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 64ms (Views: 0.6ms | ActiveRecord: 57.0ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-08 14:02:35 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-27 16:38:59 -0600
+  
+Gem::LoadError (Specified 'mysql2' for database adapter, but the gem is not loaded. Add `gem 'mysql2'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  
+activerecord (5.1.5) lib/active_record/connection_adapters/connection_specification.rb:188:in `rescue in spec'
+activerecord (5.1.5) lib/active_record/connection_adapters/connection_specification.rb:185:in `spec'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:880:in `establish_connection'
+activerecord (5.1.5) lib/active_record/connection_handling.rb:58:in `establish_connection'
+activerecord (5.1.5) lib/active_record/railtie.rb:124:in `block (2 levels) in <class:Railtie>'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:69:in `instance_eval'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:69:in `block in execute_hook'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:49:in `each'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+activerecord (5.1.5) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+activerecord (5.1.5) lib/active_record/base.rb:25:in `<top (required)>'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.5) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.5) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.5) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-27 16:39:18 -0600
+  
+Gem::LoadError (Specified 'mysql2' for database adapter, but the gem is not loaded. Add `gem 'mysql2'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  
+activerecord (5.1.5) lib/active_record/connection_adapters/connection_specification.rb:188:in `rescue in spec'
+activerecord (5.1.5) lib/active_record/connection_adapters/connection_specification.rb:185:in `spec'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:880:in `establish_connection'
+activerecord (5.1.5) lib/active_record/connection_handling.rb:58:in `establish_connection'
+activerecord (5.1.5) lib/active_record/railtie.rb:124:in `block (2 levels) in <class:Railtie>'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:69:in `instance_eval'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:69:in `block in execute_hook'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:49:in `each'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+activerecord (5.1.5) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+activerecord (5.1.5) lib/active_record/base.rb:25:in `<top (required)>'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.5) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.5) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.5) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/articles" for 127.0.0.1 at 2018-03-27 16:39:36 -0600
+  
+Gem::LoadError (Specified 'mysql2' for database adapter, but the gem is not loaded. Add `gem 'mysql2'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  
+activerecord (5.1.5) lib/active_record/connection_adapters/connection_specification.rb:188:in `rescue in spec'
+activerecord (5.1.5) lib/active_record/connection_adapters/connection_specification.rb:185:in `spec'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:880:in `establish_connection'
+activerecord (5.1.5) lib/active_record/connection_handling.rb:58:in `establish_connection'
+activerecord (5.1.5) lib/active_record/railtie.rb:124:in `block (2 levels) in <class:Railtie>'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:69:in `instance_eval'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:69:in `block in execute_hook'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:49:in `each'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+activerecord (5.1.5) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+activerecord (5.1.5) lib/active_record/base.rb:25:in `<top (required)>'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.5) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.5) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.5) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-27 16:39:43 -0600
+  
+Gem::LoadError (Specified 'mysql2' for database adapter, but the gem is not loaded. Add `gem 'mysql2'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  
+activerecord (5.1.5) lib/active_record/connection_adapters/connection_specification.rb:188:in `rescue in spec'
+activerecord (5.1.5) lib/active_record/connection_adapters/connection_specification.rb:185:in `spec'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:880:in `establish_connection'
+activerecord (5.1.5) lib/active_record/connection_handling.rb:58:in `establish_connection'
+activerecord (5.1.5) lib/active_record/railtie.rb:124:in `block (2 levels) in <class:Railtie>'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:69:in `instance_eval'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:69:in `block in execute_hook'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:49:in `each'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+activerecord (5.1.5) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+activerecord (5.1.5) lib/active_record/base.rb:25:in `<top (required)>'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.5) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.5) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.5) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-27 16:41:35 -0600
+  
+Gem::LoadError (Specified 'mysql2' for database adapter, but the gem is not loaded. Add `gem 'mysql2'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  
+activerecord (5.1.5) lib/active_record/connection_adapters/connection_specification.rb:188:in `rescue in spec'
+activerecord (5.1.5) lib/active_record/connection_adapters/connection_specification.rb:185:in `spec'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:880:in `establish_connection'
+activerecord (5.1.5) lib/active_record/connection_handling.rb:58:in `establish_connection'
+activerecord (5.1.5) lib/active_record/railtie.rb:124:in `block (2 levels) in <class:Railtie>'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:69:in `instance_eval'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:69:in `block in execute_hook'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:49:in `each'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+activerecord (5.1.5) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+activerecord (5.1.5) lib/active_record/base.rb:25:in `<top (required)>'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.5) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.5) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.5) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-27 16:55:43 -0600
+  
+Gem::LoadError (Specified 'mysql2' for database adapter, but the gem is not loaded. Add `gem 'mysql2'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  
+activerecord (5.1.5) lib/active_record/connection_adapters/connection_specification.rb:188:in `rescue in spec'
+activerecord (5.1.5) lib/active_record/connection_adapters/connection_specification.rb:185:in `spec'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:880:in `establish_connection'
+activerecord (5.1.5) lib/active_record/connection_handling.rb:58:in `establish_connection'
+activerecord (5.1.5) lib/active_record/railtie.rb:124:in `block (2 levels) in <class:Railtie>'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:69:in `instance_eval'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:69:in `block in execute_hook'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:49:in `each'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+activerecord (5.1.5) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+activerecord (5.1.5) lib/active_record/base.rb:25:in `<top (required)>'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.5) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.5) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.5) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (18.2ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (13.9ms)[0m  [1m[34mSELECT GET_LOCK('2253939812606074005', 0)[0m
+  [1m[35m (19.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (10.9ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('2253939812606074005')[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-27 16:59:20 -0600
+  
+Gem::LoadError (Specified 'mysql2' for database adapter, but the gem is not loaded. Add `gem 'mysql2'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  
+activerecord (5.1.5) lib/active_record/connection_adapters/connection_specification.rb:188:in `rescue in spec'
+activerecord (5.1.5) lib/active_record/connection_adapters/connection_specification.rb:185:in `spec'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:880:in `establish_connection'
+activerecord (5.1.5) lib/active_record/connection_handling.rb:58:in `establish_connection'
+activerecord (5.1.5) lib/active_record/railtie.rb:124:in `block (2 levels) in <class:Railtie>'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:69:in `instance_eval'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:69:in `block in execute_hook'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:49:in `each'
+activesupport (5.1.5) lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+activerecord (5.1.5) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+activerecord (5.1.5) lib/active_record/base.rb:25:in `<top (required)>'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.5) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.5) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.5) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.5) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (29.9ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('2253939812606074005', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('2253939812606074005')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-03-27 17:00:06 -0600
+  [1m[35m (31.2ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/gitz/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/gitz/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (6.9ms)
+Completed 200 OK in 39ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-03-27 17:00:07 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-27 17:00:30 -0600
+  [1m[35m (0.3ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 21ms (Views: 9.7ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-27 17:00:42 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[35m (19.6ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 60ms (Views: 39.0ms | ActiveRecord: 20.9ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-27 17:00:54 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.5ms)
+
+
