@@ -17,4 +17,17 @@ $ rails db:migrate
 $ rails s
 ```
 
+## RUN SERVER
+```bash
+$ rake start
+```
+
+
+## RUN SERVER
+##Also make sure to install create-create-app globally
+```bash
+$ npm install -g create-react-app
+```
+
+
 
