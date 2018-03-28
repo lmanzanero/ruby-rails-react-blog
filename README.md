@@ -24,7 +24,8 @@ $ rake start
 
 
 ## RUN SERVER
-##Also make sure to install create-create-app globally
+>
+>Also make sure to install create-create-app globally
 ```bash
 $ npm install -g create-react-app
 ```
