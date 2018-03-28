@@ -12,12 +12,12 @@ $ bundle install
 $ rails db:migrate
 ```
 
-## RUN SERVER
+## RUN SERVER to test only with Ruby on Rails
 ```bash
 $ rails s
 ```
 
-## RUN SERVER
+## RUN this command to concurrently run the react app and ruby project
 ```bash
 $ rake start
 ```
