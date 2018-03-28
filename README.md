@@ -1,6 +1,6 @@
 # SIMPLE RAILS 5 REST API
 
-Example of a basic REST API to perform CRUD functions. Uses MySQL by default. Please add your own database and credentials
+Example of a basic REST API to perform CRUD functions. Uses MySQL by default. Please add your own database and credentials and install create-react-app globally
 
 ## INSTALL DEPENDENCIES
 ```bash
@@ -24,8 +24,9 @@ $ rake start
 
 
 ## RUN SERVER
->
->Also make sure to install create-create-app globally
+
+Also make sure to install create-create-app globally
+
 ```bash
 $ npm install -g create-react-app
 ```
