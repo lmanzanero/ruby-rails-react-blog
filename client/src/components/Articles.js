@@ -1,4 +1,5 @@
-import React, { Component } from 'react'; 
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom'; 
 import axios from 'axios'; 
 
 class Articles extends Component {
@@ -39,7 +40,7 @@ class Articles extends Component {
               <p>{article.body}</p>
             </div>
             <div className="card-action">
-              <a href={`/articles/${article.id}`} className="btn waves-effect waves-light">Read Article</a>
+              <Link to={`/articles/${article.id}`} className="btn waves-effect waves-light">Read Article</Link>
             </div>
           </div>))} 
         </div>  

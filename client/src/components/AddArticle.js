@@ -33,10 +33,8 @@ class AddArticle extends Component {
   
   render() {
 
-    return (
-      <div> 
-          <br/>
-           <div className="row">
+    return ( 
+        <div className="row">
            <h4 className="center-align">Add New Article</h4>
             <form className="col s12" id="New_Article_Form"onSubmit={this.getNewArticle.bind(this)}>
             <div className="row">
@@ -51,8 +49,7 @@ class AddArticle extends Component {
             </div>
             <input className="btn" type="submit" value="Submit" />
             </form> 
-        </div>
-      </div>
+        </div> 
     );
   }
 }

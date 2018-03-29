@@ -2478,3 +2478,1064 @@ Processing by Api::V1::ArticlesController#index as HTML
 Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:21:14 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:22:00 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:26:12 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:26:46 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:27:04 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:27:47 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:28:33 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:29:25 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 44ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:30:17 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:30:33 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:30:43 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:32:04 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:32:16 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:34:14 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (2.8ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:35:10 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:35:18 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:36:11 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:36:32 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:36:40 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:37:33 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:37:49 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:37:59 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:38:03 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:38:10 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:38:16 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:39:53 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:40:38 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:41:32 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:42:07 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:42:44 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 7ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:42:49 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:42:53 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:43:06 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/8" for 127.0.0.1 at 2018-03-29 12:43:28 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 8 LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:43:31 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (43.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 50ms (Views: 6.0ms | ActiveRecord: 43.6ms)
+
+
+Started GET "/api/v1/articles/5" for 127.0.0.1 at 2018-03-29 12:43:39 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 5 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/5" for 127.0.0.1 at 2018-03-29 12:44:22 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 5 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:44:42 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles/1" for 127.0.0.1 at 2018-03-29 12:44:51 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/1" for 127.0.0.1 at 2018-03-29 12:48:04 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:48:12 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:49:29 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:49:32 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:50:34 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (1.9ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:50:44 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (5.0ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 8ms (Views: 1.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:50:59 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:56:01 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (5.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:56:40 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:56:53 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:57:06 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:57:08 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:57:22 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:57:28 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:57:52 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:57:54 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:58:33 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:59:07 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:59:14 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:59:24 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:59:51 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 12:59:53 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 12:59:54 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 13:01:12 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 13:02:05 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 13:02:29 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 13:02:55 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/update/10" for 127.0.0.1 at 2018-03-29 13:03:43 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/articles/update/10"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/articles/update/10" for 127.0.0.1 at 2018-03-29 13:04:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/articles/update/10"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/articles/update/10" for 127.0.0.1 at 2018-03-29 13:04:30 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/articles/update/10"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:05:25 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:06:47 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:07:57 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (37.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 47ms (Views: 1.0ms | ActiveRecord: 37.8ms)
+
+
+Started PUT "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:08:13 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:08:13 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 13:08:36 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:08:46 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:08:47 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:09:12 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:09:22 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:10:11 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:10:11 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:13:53 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:15:11 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:16:52 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 13:17:22 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:17:25 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:17:29 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:18:27 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 9ms (Views: 0.6ms | ActiveRecord: 3.1ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:18:27 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:18:30 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.9ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:18:35 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 13:18:43 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:18:47 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:18:49 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:19:30 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 1.2ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:20:24 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:20:29 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 2.2ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:20:30 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:20:32 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:20:32 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 5.0ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:20:34 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 1.8ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:20:35 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:20:36 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:20:36 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:20:36 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:20:37 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameter: :id
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:24:03 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"title"=>"", "body"=>"", "id"=>"9", "article"=>{"title"=>"", "body"=>""}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameters: :id, :article
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 578ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:24:30 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"title"=>"", "body"=>"", "id"=>"9", "article"=>{"title"=>"", "body"=>""}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameters: :id, :article
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:24:31 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"title"=>"", "body"=>"", "id"=>"9", "article"=>{"title"=>"", "body"=>""}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameters: :id, :article
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:24:59 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"title"=>"", "body"=>"", "id"=>"9", "article"=>{"title"=>"", "body"=>""}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameters: :id, :article
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 11ms (Views: 0.8ms | ActiveRecord: 3.0ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:27:00 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"title"=>"", "body"=>"", "id"=>"9", "article"=>{"title"=>"", "body"=>""}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameters: :id, :article
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:29:01 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"title"=>"", "body"=>"", "id"=>"9", "article"=>{"title"=>"", "body"=>""}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameters: :id, :article
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 15ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:29:50 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"title"=>"", "body"=>"", "id"=>"9", "article"=>{"title"=>"", "body"=>""}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameters: :id, :article
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:29:53 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"title"=>"", "body"=>"", "id"=>"9", "article"=>{"title"=>"", "body"=>""}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameters: :id, :article
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:30:41 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"title"=>"New TItle", "body"=>"New Body", "id"=>"9", "article"=>{"title"=>"New TItle", "body"=>"New Body"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameters: :id, :article
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (339.6ms)[0m  [1m[33mUPDATE `articles` SET `title` = 'New TItle', `body` = 'New Body', `updated_at` = '2018-03-29 19:30:41' WHERE `articles`.`id` = 9[0m
+  [1m[35m (84.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 430ms (Views: 0.5ms | ActiveRecord: 424.5ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 13:30:46 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:31:04 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:33:14 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:33:40 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"title"=>"This is Article 10", "body"=>"This is Article 10 Body", "id"=>"10", "article"=>{"title"=>"This is Article 10", "body"=>"This is Article 10 Body"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Unpermitted parameters: :id, :article
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.5ms)[0m  [1m[33mUPDATE `articles` SET `title` = 'This is Article 10', `body` = 'This is Article 10 Body', `updated_at` = '2018-03-29 19:33:40' WHERE `articles`.`id` = 10[0m
+  [1m[35m (100.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 133ms (Views: 1.4ms | ActiveRecord: 127.2ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:33:41 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 13:33:48 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:33:52 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:36:07 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:41:40 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 13:41:50 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:41:56 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:42:00 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:42:23 -0600
+Processing by Api::V1::ArticlesController#update as HTML
+  Parameters: {"title"=>"This is Article 9", "body"=>"This is Article 1o body", "id"=>"9", "article"=>{"title"=>"This is Article 9", "body"=>"This is Article 1o body"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Unpermitted parameters: :id, :article
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (29.2ms)[0m  [1m[33mUPDATE `articles` SET `title` = 'This is Article 9', `body` = 'This is Article 1o body', `updated_at` = '2018-03-29 19:42:23' WHERE `articles`.`id` = 9[0m
+  [1m[35m (100.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 138ms (Views: 2.1ms | ActiveRecord: 130.0ms)
+
+
+Started GET "/api/v1/articles/9" for 127.0.0.1 at 2018-03-29 13:42:23 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles" for 127.0.0.1 at 2018-03-29 13:42:29 -0600
+Processing by Api::V1::ArticlesController#index as HTML
+  [1m[36mArticle Load (33.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY created_at DESC[0m
+Completed 200 OK in 39ms (Views: 5.0ms | ActiveRecord: 33.5ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:43:33 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/articles/10" for 127.0.0.1 at 2018-03-29 13:43:45 -0600
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+
+
