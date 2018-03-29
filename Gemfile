@@ -11,6 +11,7 @@ gem 'rails', '~> 5.1.2'
 gem 'foreman', '~> 0.82.0'
 # gem 'sqlite3'
 gem 'mysql2', '~> 0.3.18'
+gem 'pg'
 gem 'puma', '~> 3.7'
 
 group :development, :test do
